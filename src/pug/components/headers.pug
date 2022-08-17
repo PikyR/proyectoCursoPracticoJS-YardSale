@@ -1,12 +1,12 @@
 header.main-header 
   nav.navbar
-    //- Burger menu
+    // Burger menu
     img.navbar__burger-menu(src="assets/icons/icon_menu.svg", alt="Menu icon")
     //- 
     .navbar__left 
-      //- Logo
+      // Logo
       img.navbar__logo(src="assets/logos/logo_yard_sale.svg", alt="Yard sale icon")
-      //- Categories
+      // Categories
       ul.navbar__menu-list
         li.navbar__menu-item: a.navbar__menu-link.navbar__menu-link--primary(href="#") All
         li.navbar__menu-item: a.navbar__menu-link(href="#") Clothes
@@ -14,8 +14,14 @@ header.main-header
         li.navbar__menu-item: a.navbar__menu-link(href="#") Furniture
         li.navbar__menu-item: a.navbar__menu-link(href="#") Toys
         li.navbar__menu-item: a.navbar__menu-link(href="#") Others
-    //- Account nav
+    // Account nav
     .navbar__right
       ul.navbar__account-list 
         li.navbar__email camilayokoo@email.com
         li.navbar__cart: img(src="assets/icons/icon_shopping_cart.svg", alt="Shopping cart icon")
+    // Menu desktop
+    nav.menu-desktop.inactive
+      ul.menu-desktop__list
+        li.menu-desktop__item: a.menu-desktop__link(href="#") My orders
+        li.menu-desktop__item: a.menu-desktop__link(href="#") My account
+        li.menu-desktop__item: a.menu-desktop__link.menu-desktop__link--primary(href="#") Sign out

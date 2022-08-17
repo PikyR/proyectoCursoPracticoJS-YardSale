@@ -1,9 +1,13 @@
 .menu-desktop {
+  position: absolute;
+  top: 53px;
+  right: 80px;
   width: 150px;
   padding: 0 8px;
   height: auto;
   border: 1px solid $color-very-light-pink;
   border-radius: 8px;
+  background-color: $color-light;
 
   &__list {
     list-style: none;

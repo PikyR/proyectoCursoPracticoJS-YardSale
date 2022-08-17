@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yard Sale</title>
+    <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <!-- Styles-->
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="main-header"> 
-      <nav class="navbar"><img class="navbar__burger-menu" src="assets/icons/icon_menu.svg" alt="Menu icon">
-        <div class="navbar__left"> <img class="navbar__logo" src="assets/logos/logo_yard_sale.svg" alt="Yard sale icon">
+      <nav class="navbar">
+        <!-- Burger menu--><img class="navbar__burger-menu" src="assets/icons/icon_menu.svg" alt="Menu icon">
+        <div class="navbar__left"> 
+          <!-- Logo--><img class="navbar__logo" src="assets/logos/logo_yard_sale.svg" alt="Yard sale icon">
+          <!-- Categories-->
           <ul class="navbar__menu-list">
             <li class="navbar__menu-item"><a class="navbar__menu-link navbar__menu-link--primary" href="#">All</a></li>
             <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Clothes</a></li>
@@ -24,12 +29,21 @@
             <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Others</a></li>
           </ul>
         </div>
+        <!-- Account nav-->
         <div class="navbar__right">
           <ul class="navbar__account-list"> 
             <li class="navbar__email">camilayokoo@email.com</li>
             <li class="navbar__cart"><img src="assets/icons/icon_shopping_cart.svg" alt="Shopping cart icon"></li>
           </ul>
         </div>
+        <!-- Menu desktop-->
+        <nav class="menu-desktop inactive">
+          <ul class="menu-desktop__list">
+            <li class="menu-desktop__item"><a class="menu-desktop__link" href="#">My orders</a></li>
+            <li class="menu-desktop__item"><a class="menu-desktop__link" href="#">My account</a></li>
+            <li class="menu-desktop__item"><a class="menu-desktop__link menu-desktop__link--primary" href="#">Sign out</a></li>
+          </ul>
+        </nav>
       </nav>
     </header>
     <nav class="menu">

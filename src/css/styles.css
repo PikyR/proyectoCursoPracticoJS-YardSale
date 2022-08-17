@@ -132,6 +132,10 @@ body {
   font-weight: 700;
 }
 
+.inactive {
+  display: none;
+}
+
 .main-header {
   min-width: 320px;
   width: 100%;
@@ -201,6 +205,7 @@ body {
   display: none;
   font-size: 1.4rem;
   font-weight: 300;
+  cursor: pointer;
 }
 @media (min-width: 640px) {
   .navbar__email {
@@ -218,6 +223,53 @@ body {
 }
 .navbar__cart img {
   width: 100%;
+}
+
+.cards-container {
+  min-width: 320px;
+  padding: 8px;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (min-width: 426px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
+}
+@media (min-width: 640px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, 240px);
+  }
+}
+
+.product-card {
+  width: 100%;
+}
+.product-card__img {
+  width: 100%;
+  height: 240px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+.product-card__detail {
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-card__info {
+  margin-top: 4px;
+}
+.product-card__price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.product-card__product-name {
+  font-weight: 300;
+  font-size: 1.6rem;
 }
 
 .menu {
@@ -266,11 +318,15 @@ body {
 }
 
 .menu-desktop {
+  position: absolute;
+  top: 53px;
+  right: 80px;
   width: 150px;
   padding: 0 8px;
   height: auto;
   border: 1px solid #c7c7c7;
   border-radius: 8px;
+  background-color: #ffffff;
 }
 .menu-desktop__list {
   list-style: none;
@@ -289,53 +345,6 @@ body {
 .menu-desktop__link--primary {
   color: #acd9b2;
   border-top: 1px solid #c7c7c7;
-}
-
-.cards-container {
-  min-width: 320px;
-  padding: 8px;
-  display: grid;
-  place-content: center;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-@media (min-width: 426px) {
-  .cards-container {
-    grid-template-columns: repeat(auto-fill, 200px);
-  }
-}
-@media (min-width: 640px) {
-  .cards-container {
-    grid-template-columns: repeat(auto-fill, 240px);
-  }
-}
-
-.product-card {
-  width: 100%;
-}
-.product-card__img {
-  width: 100%;
-  height: 240px;
-  border-radius: 16px;
-  object-fit: cover;
-  object-position: center;
-}
-.product-card__detail {
-  margin-top: 4px;
-  display: flex;
-  justify-content: space-between;
-}
-.product-card__info {
-  margin-top: 4px;
-}
-.product-card__price {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-}
-.product-card__product-name {
-  font-weight: 300;
-  font-size: 1.6rem;
 }
 
 .new-pass {
