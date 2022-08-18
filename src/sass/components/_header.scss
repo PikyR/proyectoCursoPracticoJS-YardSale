@@ -18,7 +18,7 @@
 
   &__burger-menu {
     cursor: pointer;
-    
+
     @media (min-width: 640px) and (min-width: 904px) {
       display: none;
     }
@@ -82,6 +82,7 @@
   &__cart {
     display: flex;
     align-items: center;
+    cursor: pointer;
     
     @media (min-width: 640px) {
       display: block;

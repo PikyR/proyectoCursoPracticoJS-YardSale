@@ -218,6 +218,7 @@ body {
 .navbar__cart {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 @media (min-width: 640px) {
   .navbar__cart {
