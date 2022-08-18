@@ -155,6 +155,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.navbar__burger-menu {
+  cursor: pointer;
+}
 @media (min-width: 640px) and (min-width: 904px) {
   .navbar__burger-menu {
     display: none;
@@ -272,48 +275,61 @@ body {
   font-size: 1.6rem;
 }
 
-.menu {
+.menu-mobile-container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 54px;
+}
+@media (min-width: 640px) and (min-width: 904px) {
+  .menu-mobile-container {
+    display: none;
+  }
+}
+
+.menu-mobile {
   min-height: auto;
-  height: 100vh;
+  height: calc(100vh - 54px);
   padding: 20px;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
-.menu__list {
+.menu-mobile__list {
   list-style: none;
   margin-bottom: 12px;
 }
-.menu__list--profile {
+.menu-mobile__list--profile {
   margin-top: 12px;
   padding-top: 12px;
   border-top: 1px solid #c7c7c7;
 }
-.menu__list--signout {
+.menu-mobile__list--signout {
   margin-top: auto;
 }
-.menu__item {
+.menu-mobile__item {
   display: block;
   padding: 16px 8px;
 }
-.menu__item--signout {
+.menu-mobile__item--signout {
   padding: 4px 8px;
 }
-.menu__title {
+.menu-mobile__title {
   font-size: 1.6rem;
   text-transform: uppercase;
 }
-.menu__link {
+.menu-mobile__link {
   display: block;
   font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
   color: #000000;
 }
-.menu__link--primary {
+.menu-mobile__link--primary {
   font-size: 1.4rem;
   color: #acd9b2;
 }
-.menu__email {
+.menu-mobile__email {
   font-size: 1.4rem;
 }
 
@@ -326,7 +342,12 @@ body {
   height: auto;
   border: 1px solid #c7c7c7;
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+@media (max-width: 904px) {
+  .menu-desktop {
+    display: none;
+  }
 }
 .menu-desktop__list {
   list-style: none;

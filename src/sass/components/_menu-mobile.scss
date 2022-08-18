@@ -1,9 +1,21 @@
-.menu{  
+.menu-mobile-container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 54px;
+
+  @media (min-width: 640px) and (min-width: 904px) {
+    display: none;
+  }
+}
+
+.menu-mobile{  
   min-height: auto;
-  height: 100vh;
+  height: calc(100vh - 54px);  
   padding: 20px;
   display: flex;
   flex-direction: column;
+  background-color: $color-light;
 
   &__list {
     list-style: none;

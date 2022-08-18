@@ -1,11 +1,11 @@
 header.main-header 
   nav.navbar
     // Burger menu
-    img.navbar__burger-menu(src="assets/icons/icon_menu.svg", alt="Menu icon")
+    img.navbar__burger-menu(src="assets/icons/icon_menu.svg" alt="Menu icon")
     //- 
     .navbar__left 
       // Logo
-      img.navbar__logo(src="assets/logos/logo_yard_sale.svg", alt="Yard sale icon")
+      img.navbar__logo(src="assets/logos/logo_yard_sale.svg" alt="Yard sale icon")
       // Categories
       ul.navbar__menu-list
         li.navbar__menu-item: a.navbar__menu-link.navbar__menu-link--primary(href="#") All
@@ -18,10 +18,32 @@ header.main-header
     .navbar__right
       ul.navbar__account-list 
         li.navbar__email camilayokoo@email.com
-        li.navbar__cart: img(src="assets/icons/icon_shopping_cart.svg", alt="Shopping cart icon")
+        li.navbar__cart: img(src="assets/icons/icon_shopping_cart.svg" alt="Shopping cart icon")
     // Menu desktop
     nav.menu-desktop.inactive
       ul.menu-desktop__list
         li.menu-desktop__item: a.menu-desktop__link(href="#") My orders
         li.menu-desktop__item: a.menu-desktop__link(href="#") My account
         li.menu-desktop__item: a.menu-desktop__link.menu-desktop__link--primary(href="#") Sign out
+    // Menu mobile
+    .menu-mobile-container.inactive
+      nav.menu-mobile
+        // Categories 
+        ul.menu-mobile-mobile__list 
+          li.menu-mobile__item: h3.menu-mobile__title Categories
+          li.menu-mobile__item: a.menu-mobile__link(href="#") All
+          li.menu-mobile__item: a.menu-mobile__link(href="#") Clothes
+          li.menu-mobile__item: a.menu-mobile__link(href="#") Electronics
+          li.menu-mobile__item: a.menu-mobile__link(href="#") Furnitures
+          li.menu-mobile__item: a.menu-mobile__link(href="#") Toys
+          li.menu-mobile__item: a.menu-mobile__link(href="#") Others
+
+        // My profile
+        ul.menu-mobile__list.menu-mobile__list--profile
+          li.menu-mobile__item: a.menu-mobile__link(href="#") My orders
+          li.menu-mobile__item: a.menu-mobile__link(href="#") My account
+
+        // Sign out
+        ul.menu-mobile__list.menu-mobile__list--signout
+          li.menu-mobile__item.menu-mobile__item--signout: p.menu-mobile__email camilayokoo@email.com
+          li.menu-mobile__item.menu-mobile__item--signout: a.menu-mobile__link.menu-mobile__link--primary(href="#") Sign out

@@ -7,8 +7,12 @@
   height: auto;
   border: 1px solid $color-very-light-pink;
   border-radius: 8px;
-  background-color: $color-light;
+  background-color: rgba($color: $color-light, $alpha: 0.95);
 
+  @media (max-width: 904px) {
+    display: none;
+  }
+  
   &__list {
     list-style: none;
   }

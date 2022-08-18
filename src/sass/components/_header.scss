@@ -4,8 +4,9 @@
   height: 54px;
   padding: 8px 16px;
   border-bottom: 1px solid $color-very-light-pink;
+  
   @media (min-width: 640px){
-    padding: 8px 40px;
+    padding: 8px 40px;    
   }
 }
 
@@ -16,6 +17,8 @@
   align-items: center;  
 
   &__burger-menu {
+    cursor: pointer;
+    
     @media (min-width: 640px) and (min-width: 904px) {
       display: none;
     }
