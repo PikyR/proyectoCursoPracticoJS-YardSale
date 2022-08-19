@@ -54,3 +54,53 @@ function toggleShoppingCart() {
 
   shoppingCart.classList.toggle('inactive');
 }
+
+// Lista de productos
+
+const productsList = [];
+
+productsList.push({
+  name: "Bike",
+  price: 123,
+  image: "assets/images/pineapple.jpg"
+})
+productsList.push({
+  name: "lighter",
+  price: 456,
+  image: "assets/images/lighter.jpg"
+})
+productsList.push({
+  name: "Camera",
+  price: 123,
+  image: "assets/images/camera.jpg"
+})
+
+for (const product of productsList) {
+  const productCard = document.createElement('article');
+  productCard.classList.add('product-card');
+
+  const productCardImg = document.createElement('img');
+  productCardImg.classList.add('product-card__img');
+  productCardImg.setAttribute('src', product.image);
+
+  const productCardDetail = document.createElement('div');
+  productCardDetail.classList.add('product-card__detail');
+  
+  const productCardInfo = document.createElement('div');
+  productCardInfo.classList.add('product-card__info');
+  
+  const productCardPrice = document.createElement('p');
+  productCardPrice.classList.add('product-card__price');
+  productCardPrice.innerText = `$ ${product.price}`;
+  
+  const productCardName = document.createElement('p');
+  productCardName.classList.add('product-card__product-name');
+  productCardName.innerText = product.name;
+
+  const productCardCartIcon = document.createElement('figure');
+  productCardCartIcon.classList.add('product-card__icon');
+  
+  const productCardCartIconImg = document.createElement('img');
+  productCardCartIconImg.classList.add('product-card__icon');
+  productCardCartIconImg.setAttribute('src', 'assets/icons/bt_add_to_cart.svg');
+}
