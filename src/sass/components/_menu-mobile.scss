@@ -10,8 +10,7 @@
 }
 
 .menu-mobile{  
-  min-height: auto;
-  height: calc(100vh - 54px);  
+  min-height: -webkit-fill-available; //TEST// height: calc(100vh - 54px);
   padding: 20px;
   display: flex;
   flex-direction: column;
