@@ -1,11 +1,12 @@
 extends ./components/templates.pug
 
 block content
-  section.main-container.main-container--block    
+  section.main-container.main-container--block
+    include components/product-detail.pug    
     main.cards-container      
-      +product-card('pineapple.jpg','$ 999,99','Pineapple')
-      +product-card('lighter.jpg','$ 111,22','Lighter')
-      +product-card('camera.jpg','$ 111,22','Camera')
+      //- +product-card('pineapple.jpg','$ 999,99','Pineapple')
+      //- +product-card('lighter.jpg','$ 111,22','Lighter')
+      //- +product-card('camera.jpg','$ 111,22','Camera')
       //- +product-card('lighter.jpg','$ 111,22','Ligther')
       //- +product-card('camera.jpg','$ 111,22','Camera')
       //- +product-card('pineapple.jpg','$ 111,22','Pineapple')

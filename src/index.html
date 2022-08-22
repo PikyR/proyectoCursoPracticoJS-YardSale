@@ -76,7 +76,7 @@
       </nav>
     </header>
     <aside class="shopping-cart inactive">
-      <div class="shopping-cart__header"><img src="assets/icons/flechita.svg" alt="Back arrow icon">
+      <div class="shopping-cart__header"><img class="shopping-cart__back-arrow" src="assets/icons/flechita.svg" alt="Back arrow icon">
         <h2 class="shopping-cart__title">Shopping cart</h2>
       </div>
       <section class="shop-cart">
@@ -111,47 +111,19 @@
       </div>
       <button class="button button--primary">Checkout</button>
     </aside>
-    <aside class="product-detail inactive"> 
-      <figure class="product-detail__images">
-        <div class="product-detail__close-icon"><img src="assets/icons/icon_close.png" alt="Close icon"></div><img class="product-detail__product-img" src="assets/images/camera.jpg" alt="Product image camera">
-      </figure>
-      <div class="product-detail__info">
-        <p class="product-detail__price">$120,00</p>
-        <p class="product-detail__product">Camera</p>
-        <p class="product-detail__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti eum neque ducimus odit quis non eos repellat incidunt minus eveniet.</p>
-        <button class="button button--primary button--add-to-cart"><img src="assets/icons/bt_add_to_cart.svg" alt="Icon add to cart"><span>Add to cart</span></button>
-      </div>
-    </aside>
-    <section class="main-container main-container--block">   
-      <main class="cards-container">     
-          <article class="product-card"><img class="product-card__img" src="assets/images/pineapple.jpg" alt="Product image Pineapple">
-            <div class="product-card__detail">
-              <div class="product-card__info">
-                <p class="product-card__price">$ 999,99</p>
-                <p class="product-card__product-name">Pineapple</p>
-              </div>
-              <figure class="product-card__icon"> <img src="assets/icons/bt_add_to_cart.svg" alt="Add to cart"></figure>
-            </div>
-          </article>
-          <article class="product-card"><img class="product-card__img" src="assets/images/lighter.jpg" alt="Product image Lighter">
-            <div class="product-card__detail">
-              <div class="product-card__info">
-                <p class="product-card__price">$ 111,22</p>
-                <p class="product-card__product-name">Lighter</p>
-              </div>
-              <figure class="product-card__icon"> <img src="assets/icons/bt_add_to_cart.svg" alt="Add to cart"></figure>
-            </div>
-          </article>
-          <article class="product-card"><img class="product-card__img" src="assets/images/camera.jpg" alt="Product image Camera">
-            <div class="product-card__detail">
-              <div class="product-card__info">
-                <p class="product-card__price">$ 111,22</p>
-                <p class="product-card__product-name">Camera</p>
-              </div>
-              <figure class="product-card__icon"> <img src="assets/icons/bt_add_to_cart.svg" alt="Add to cart"></figure>
-            </div>
-          </article>
-      </main>
+    <section class="main-container main-container--block">
+      <aside class="product-detail inactive"> 
+        <figure class="product-detail__images">
+          <div class="product-detail__close-icon"><img src="assets/icons/icon_close.png" alt="Close icon"></div><img class="product-detail__product-img" src="assets/images/camera.jpg" alt="Product image camera">
+        </figure>
+        <div class="product-detail__info">
+          <p class="product-detail__price">$120,00</p>
+          <p class="product-detail__product">Camera</p>
+          <p class="product-detail__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti eum neque ducimus odit quis non eos repellat incidunt minus eveniet.</p>
+          <button class="button button--primary button--add-to-cart"><img src="assets/icons/bt_add_to_cart.svg" alt="Icon add to cart"><span>Add to cart</span></button>
+        </div>
+      </aside>
+      <main class="cards-container">     </main>
     </section>
     <script src="js/main.js"></script>
   </body>
